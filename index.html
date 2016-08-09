@@ -13,10 +13,13 @@
     <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
     <!-- ANIMATE.CSS-->
     <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
+    <!-- SWEET ALERT-->
+    <link rel="stylesheet" href="vendor/sweetalert/dist/sweetalert.css">
     <!-- =============== BOOTSTRAP STYLES ===============-->
     <link rel="stylesheet" href="css/bootstrap.css" id="bscss">
     <!-- =============== APP STYLES ===============-->
     <link rel="stylesheet" href="css/app.css" id="maincss">
+
 </head>
 
 <body>
@@ -45,12 +48,12 @@
                                 предприятия.</p>
                         </div>
                         <div class="list-group">
-                            <a href="#" class="list-group-item">
-                                <em class="fa fa-fw fa-cogs text-muted"></em> Инструменты для разработчика</a>
-                            <a href="#" class="list-group-item">
-                                <em class="fa fa-fw fa-ship text-muted"></em> Облачные контейнеры</a>
-                            <a href="#" class="list-group-item">
-                                <em class="fa fa-fw fa-search text-muted"></em> Исследовательские проекты</a>
+                            <a href="http://www.silverbulleters.org/" class="list-group-item" target="_blank">
+                                <em class="fa fa-fw fa-link text-muted"></em> Официальный сайт</a>
+                            <a href="#"  class="subscribe-to-us list-group-item">
+                                <em class="fa fa-fw fa-envelope text-muted"></em> Подписаться на новости</a>
+                            <a href="#" class="list-group-item call-to-us">
+                                <em class="fa fa-fw fa-phone text-muted"></em> Позвонить нам</a>
                         </div>
                     </div>
                 </div>
@@ -67,7 +70,7 @@
                                             <em class="fa fa-map-marker fa-fw"></em>Москва, ул. Дербенёвская набережная, д.11 
                                         </li>
                                         <li class="mb-sm">
-                                            <em class="fa fa-phone fa-fw"></em>+7 (499) 346-70-19
+                                            <a href="#" class="call-to-us"><em class="fa fa-phone fa-fw"></em>+7 (499) 346-70-19</a>
                                         </li>
                                         <li class="mb-sm">
                                             <em class="fa fa-envelope fa-fw"></em>b2b@silverbulleters.org
@@ -168,13 +171,34 @@
 <script src="vendor/moment/min/moment-with-locales.min.js"></script>
 <!-- SPARKLINE-->
 <script src="vendor/sparkline/index.js"></script>
+<!-- SWEET ALERT-->
+<script src="vendor/sweetalert/dist/sweetalert.min.js"></script>
 <!-- =============== APP SCRIPTS ===============-->
 <script src="js/app.js"></script>
 <script src="js/data-injector.js"></script>
 
+<!--CALL US! PLEASE-->
+<script type="text/javascript">
+var ZCallbackWidgetLinkId  = '45f5c993b5ca74a3cc6b7aad178428df';
+var ZCallbackWidgetDomain  = 'my.zadarma.com';
+(function(){
+    var lt = document.createElement('script');
+    lt.type ='text/javascript';
+    lt.charset = 'utf-8';
+    lt.async = true;
+    lt.src = 'https://' + ZCallbackWidgetDomain + '/callbackWidget/js/main.min.js?unq='+Math.floor(Math.random(0,1000)*1000);
+    var sc = document.getElementsByTagName('script')[0];
+    if (sc) sc.parentNode.insertBefore(lt, sc);
+    else document.documentElement.firstChild.appendChild(lt);
+})();
+</script>
 
+<!--End mc_embed_signup-->
 <script id="tmpl-row" type="javascript/template">
     <div class="row"></div>
+</script>
+<script id="tmpl-category-title" type="javascript/template">
+    <h3 class="page-header text-center">{category}</h3>
 </script>
 
 <script id="tmpl-last-action-item" type="javascript/template">
