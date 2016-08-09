@@ -6,6 +6,7 @@ Build with:
 
 * jeckyl (with local Docker tests)
 * some bootstrap styles and assest
+* mailchimp and zadarma.com widjets
 
 ## Workflow
 
